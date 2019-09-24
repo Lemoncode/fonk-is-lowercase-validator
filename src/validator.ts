@@ -12,7 +12,7 @@ const validate = (value: string) => value === value.toLowerCase();
 const isDefined = value => value !== void 0 && value !== null && value !== '';
 
 export const validator: FieldValidationFunctionSync = fieldValidatorArgs => {
-  const { value, message = defaultMessage, customArgs } = fieldValidatorArgs;
+  const { value, message = defaultMessage } = fieldValidatorArgs;
 
   const succeeded =
     !isDefined(value) || (validateType(value) && validate(value));

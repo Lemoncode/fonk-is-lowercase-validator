@@ -6,9 +6,7 @@
 
 This is a [fonk](https://github.com/Lemoncode/fonk) microlibrary that brings validation capabilities to:
 
-// TODO: Update description and example.
-
-- Validate if a field of a form ....
+- Validate if a field of a form is a lowercase string
 
 How to add it to an existing form validation schema:
 
@@ -27,7 +25,7 @@ We can add a isLowercase validation to the myFormValues
 import { isLowercase } from '@lemoncode/fonk-is-lowercase-validator';
 
 const validationSchema = {
-  price: [isLowercase.validator],
+  product: [isLowercase.validator],
 };
 ```
 
@@ -38,7 +36,7 @@ You can customize the error message displayed in two ways:
 ```javascript
 import { isLowercase } from '@lemoncode/fonk-is-lowercase-validator';
 
-isLowercase.setErrorMessage('El campo debe de ser numérico');
+isLowercase.setErrorMessage('El campo debe de ser una cadena en minúsculas');
 ```
 
 - Locally just override the error message for this validationSchema:

@@ -1,6 +1,6 @@
 # fonk-is-lowercase-validator
 
-[![CircleCI](https://badgen.net/github/status/Lemoncode/fonk-is-lowercase-validator/master/ci?icon=circleci&label=circleci)](https://circleci.com/gh/Lemoncode/fonk-is-lowercase-validator/tree/master)
+[![CircleCI](https://badgen.net/github/status/Lemoncode/fonk-is-lowercase-validator/master?icon=circleci&label=circleci)](https://circleci.com/gh/Lemoncode/fonk-is-lowercase-validator/tree/master)
 [![NPM Version](https://badgen.net/npm/v/@lemoncode/fonk-is-lowercase-validator?icon=npm&label=npm)](https://www.npmjs.com/package/@lemoncode/fonk-is-lowercase-validator)
 [![bundle-size](https://badgen.net/bundlephobia/min/@lemoncode/fonk-is-lowercase-validator)](https://bundlephobia.com/result?p=@lemoncode/fonk-is-lowercase-validator)
 

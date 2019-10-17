@@ -14,7 +14,7 @@ We have the following form model:
 
 ```
 const myFormValues = {
-  product : 'shoes',
+  product: 'shoes',
   price: 20,
 }
 ```
@@ -25,7 +25,9 @@ We can add a isLowercase validation to the myFormValues
 import { isLowercase } from '@lemoncode/fonk-is-lowercase-validator';
 
 const validationSchema = {
-  product: [isLowercase.validator],
+  field: {
+    product: [isLowercase.validator],
+  },
 };
 ```
 
@@ -45,12 +47,14 @@ isLowercase.setErrorMessage('El campo debe de ser una cadena en minúsculas');
 import { isLowercase } from '@lemoncode/fonk-is-lowercase-validator';
 
 const validationSchema = {
-  price: [
-    {
-      validator: isLowercase.validator,
-      message: 'Error message only updated for the validation schema',
-    },
-  ],
+  field: {
+    price: [
+      {
+        validator: isLowercase.validator,
+        message: 'Error message only updated for the validation schema',
+      },
+    ],
+  },
 };
 ```
 
